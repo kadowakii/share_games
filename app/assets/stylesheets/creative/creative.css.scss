@@ -69,7 +69,7 @@ section {
 }
 
 .modalWrapper{
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 aside {
@@ -132,12 +132,12 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(170,170,170,.7);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: rgba(170,170,170,.7);
     }
 
     .navbar-default .nav > li>a,
