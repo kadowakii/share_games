@@ -3,6 +3,10 @@ class CreativesController < ApplicationController
 
   def index
   end
+
+  def contact
+  end
+
   def privacy_policy
   end
 end
