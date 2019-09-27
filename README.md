@@ -11,6 +11,12 @@ Things you may want to cover:
 * Rails version
 5.1.7
 
+* Sample mail address
+sample@example.com
+
+* Sample password
+root_root
+
 * System dependencies
 
 * Configuration
