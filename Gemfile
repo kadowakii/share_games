@@ -50,6 +50,7 @@ group :development, :test do
   gem 'pry-doc'    # methodを表示
   gem 'pry-byebug'
   gem 'pry-stack_explorer' # スタックをたどれる
+  gem "rubocop"
 end
 
 group :development do
