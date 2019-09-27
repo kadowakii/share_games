@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - "vendor/**/*" # rubocop config/default.yml
+    - "db/migrate/*.rb"
+    - "db/schema.rb"
+    - "*.md"
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+# 日本語のコメントを許可する
+Style/AsciiComments:
+  Enabled: false
