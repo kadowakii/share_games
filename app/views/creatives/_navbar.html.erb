@@ -26,9 +26,21 @@
                 <li>
                     <%= link_to 'Contact', contact_path %>
                 </li>
+                <% if user_signed_in? %>
                 <li>
-                    <%= link_to 'signup', signup_path %>
+                    <%= link_to 'edit profile', edit_user_registration_path %>
                 </li>
+                <li>
+                    <%= link_to 'logout', logout_path %>
+                </li>
+                <% else %>
+                    <li>
+                        <%= link_to 'signup', signup_path %>
+                    </li>
+                    <li>
+                        <%= link_to 'login', login_path %>
+                    </li>
+                <% end %>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
