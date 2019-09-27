@@ -46,6 +46,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'pry-rails'  # rails consoleでirbの代わりにpryを使用
+  gem 'pry-doc'    # methodを表示
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer' # スタックをたどれる
 end
 
 group :development do
