@@ -1,5 +1,7 @@
 # README
 
+[SHARE GAMES](https://share-games.herokuapp.com/)
+
 * アプリケーションの概要
     - 遊んだゲームを記録し、ゲーマー同士で交流するサイト
 
