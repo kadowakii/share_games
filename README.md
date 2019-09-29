@@ -12,10 +12,10 @@ Things you may want to cover:
     - 5.1.7
 
 * Sample mail address
-root@example.com
+    - root@example.com
 
 * Sample password
-root
+    - root
 
 * System dependencies
 
