@@ -6,10 +6,10 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version 
-2.6.4
+    - 2.6.4
 
 * Rails version 
-5.1.7
+    - 5.1.7
 
 * Sample mail address
 root@example.com
