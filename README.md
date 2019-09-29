@@ -5,10 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 
 2.6.4
 
-* Rails version
+* Rails version 
 5.1.7
 
 * Sample mail address
