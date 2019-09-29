@@ -1,9 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* アプリケーションの概要
+    - 遊んだゲームを記録し、ゲーマー同士で交流するサイト
 
-Things you may want to cover:
+* アプリケーションの機能一覧
+
+* アプリケーション内で使用している技術一覧
+    - インフラ
+        - Heroku
+    - データベース
+        - MySQL
+    - セッション管理
+        - devise
+    - デプロイ方法
+        - GitHubと連携させてpushしたタイミングで自動デプロイ
 
 * Ruby version 
     - 2.6.4
@@ -17,18 +27,3 @@ Things you may want to cover:
 * Sample password
     - root
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-heroku
-* ...
