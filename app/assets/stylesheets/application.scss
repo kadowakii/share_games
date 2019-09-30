@@ -1,10 +1,10 @@
 /*
-*= require bootstrap
 *= require font_awesome
 */
 
-@charset "utf-8";
 
+@charset "utf-8";
+@import "bootstrap";
 @import "./creative/manifest";
 @import "microposts";
 @import "scaffolds";
