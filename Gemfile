@@ -41,6 +41,9 @@ gem 'jquery-ui-rails'
 gem 'dotenv-rails'
 
 gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2'
 
 gem 'bootstrap'
 
