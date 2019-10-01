@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SHARE GAMES</title>
-  <%= favicon_link_tag('creative/favicon.ico') %>
-  <%= stylesheet_link_tag 'creative/manifest', media: 'all' %>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <%= javascript_include_tag 'creative/manifest.js' %>
-  <%= csrf_meta_tags %>
+	<title>SHARE GAMES</title><%= favicon_link_tag('creative/favicon.ico') %><%= stylesheet_link_tag 'creative/manifest', media: 'all' %>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><%= javascript_include_tag 'creative/manifest.js' %><%= csrf_meta_tags %>
 </head>
-
 <body>
-
-<%= yield %>
-
+  <%= yield %>
+  <%= debug(params) if Rails.env.development? %>
 </body>
 </html>
 
