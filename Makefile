@@ -15,3 +15,7 @@ seed:
 .PHONY: test
 test:
 	bundle exec rails test
+
+.PHONY: reset-precompile
+reset-precompile:
+	bundle exec rake assets:clobber assets:precompile
