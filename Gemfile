@@ -34,19 +34,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'frontend-generators'
-
 gem 'jquery-rails' 
 gem 'jquery-ui-rails'
-
 gem 'dotenv-rails'
-
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
-
 gem 'bootstrap'
-
 gem 'slim-rails'
 gem 'html2slim'
 
