@@ -20,7 +20,7 @@ test:
 reset-precompile:
 	bundle exec rake assets:clobber assets:precompile
 
-.PHONY: heroku-seed
+.PHONY: heroku-reset-db
 heroku-seed:
-	heroku run  DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rake db:migrate:reset
-	heroku run rake db:seed
+	heroku run rake db:migrate:reset DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+	heroku run bundle exec rake db:seed RAILS_ENV=production
