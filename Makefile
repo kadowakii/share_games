@@ -22,7 +22,5 @@ reset-precompile:
 
 .PHONY: heroku-seed
 heroku-seed:
-	heroku maintenance:on
-	heroku rake db:migrate:redo STEP=100
+	heroku run  DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rake db:migrate:reset
 	heroku run rake db:seed
-	heroku maintenance:off
