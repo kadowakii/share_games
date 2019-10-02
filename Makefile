@@ -22,4 +22,7 @@ reset-precompile:
 
 .PHONY: heroku-seed
 heroku-seed:
+	heroku maintenance:on
+	heroku rake db:migrate:redo STEP=100
 	heroku run rake db:seed
+	heroku maintenance:off
