@@ -19,3 +19,7 @@ test:
 .PHONY: reset-precompile
 reset-precompile:
 	bundle exec rake assets:clobber assets:precompile
+
+.PHONY: heroku-seed
+heroku-seed:
+	heroku run rake db:seed
