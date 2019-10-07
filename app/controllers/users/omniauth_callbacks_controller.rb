@@ -9,10 +9,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     callback_from :twitter
   end
 
-  def facebook
-    callback_from :facebook
-  end
-
   # More info at:
   # https://github.com/plataformatec/devise#omniauth
 
