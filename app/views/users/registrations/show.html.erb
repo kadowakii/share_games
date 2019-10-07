@@ -3,13 +3,14 @@
     <section class="user_info">
       <h1>
         <%= gravatar_for current_user %>
-        <%= current_user.name %>
       </h1>
+      <%= current_user.name %>
+      <%= current_user.microposts.count %>
     </section>
   </aside>
   <div class="col-md-8">
     <% if current_user.microposts.any? %>
-      <h3>Microposts (<%= current_user.microposts.count %>)</h3>
+      <h3>Comments</h3>
       <ol class="microposts">
         <%= render @microposts %>
       </ol>
