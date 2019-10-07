@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'creatives#index'
+  get  'contact', to: 'creatives#contact'
+  get 'terms', to: 'creatives#terms'
+  get 'privacy_policy', to: 'creatives#privacy_policy'
 
   devise_for :users, controllers: {
     sessions: 'users/sessions',
@@ -14,10 +18,5 @@ Rails.application.routes.draw do
     get "logout", :to => "users/sessions#destroy"
   end
 
-
-  resources :microposts
-  root 'creatives#index'
-  get  'contact', to: 'creatives#contact'
-  get 'terms', to: 'creatives#terms'
-  get 'privacy_policy', to: 'creatives#privacy_policy'
+  resources :microposts, only: [:create, :destroy]
 end
