@@ -25,6 +25,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def show
+    @microposts = current_user.microposts.page(params[:page])
   end
 
   # DELETE /resource

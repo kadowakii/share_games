@@ -26,10 +26,6 @@ ActiveRecord::Schema.define(version: 20191005144858) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "names", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "name", limit: 100
-  end
-
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", default: "", null: false
     t.string "email", default: "", null: false

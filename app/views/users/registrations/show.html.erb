@@ -1,2 +1,19 @@
-<h1>My page (<%= current_user.email %>)</h1>
-<%= gravatar_for current_user %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for current_user %>
+        <%= current_user.name %>
+      </h1>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <% if current_user.microposts.any? %>
+      <h3>Microposts (<%= current_user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%= paginate @microposts %>
+    <% end %>
+  </div>
+</div>
