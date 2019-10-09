@@ -4,7 +4,7 @@ class InquiryMailer < ApplicationMailer
     mail(
       from: 'system@example.com',
       to:   ENV['GMAIL_ADDRESS'],
-      subject: 'SHARE GAMES お問い合わせ'
+      subject: 'YOUTUBER REVIEWS お問い合わせ'
     )
   end
 end

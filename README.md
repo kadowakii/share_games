@@ -1,6 +1,6 @@
 # README
 
-* SHARE GAMES
+* YOUTUBER REVIEWS
     - https://share-games.herokuapp.com
 
 * アプリケーションの概要
