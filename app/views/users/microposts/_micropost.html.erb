@@ -1,5 +1,5 @@
 <li id="micropost-<%= micropost.id %>">
-  <%= gravatar_for(micropost.user) %>
+  <%= link_to gravatar_for(micropost.user), show_path %>
   <span class="user"><%= micropost.user.name %></span>
   <span class="content"><%= micropost.content %></span>
   <span class="timestamp">
