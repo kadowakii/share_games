@@ -27,7 +27,7 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(micropost_params)
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to @micropost, notice: 'Micropost was successfully created.' }
+        format.html { redirect_to show_url, notice: 'Tweet successfully created.' }
       else
         format.html { render :new }
       end

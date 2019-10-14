@@ -25,6 +25,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def show
+    @micropost = current_user.microposts.build if user_signed_in?	
     @microposts = current_user.microposts.page(params[:page])
   end
 
