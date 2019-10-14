@@ -1,0 +1,11 @@
+
+<% @youtubers.each do |youtuber| %>
+   <div>
+        <a href=<%="youtubers/#{youtuber.id}"%>>
+           <%= youtuber.title %>
+        </a>
+    </div>
+<% end %>
+
+
+<%= paginate @youtubers %>
