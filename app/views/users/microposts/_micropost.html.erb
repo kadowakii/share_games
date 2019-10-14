@@ -1,8 +1,13 @@
+<%= render 'creatives/navbar_sub' %>
+
 <li id="micropost-<%= micropost.id %>">
   <%= link_to gravatar_for(micropost.user), show_path %>
   <span class="user"><%= micropost.user.name %></span>
   <span class="content"><%= micropost.content %></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(micropost.created_at) %> ago.
-  </span>
+  <div class="timestamp">
+    <%= time_ago_in_words(micropost.created_at) %>前
+    <% if user_signed_in? %>
+      <%= link_to "削除する", micropost, method: :delete %>
+    <% end %>
+  </div>
 </li>

@@ -51,8 +51,7 @@ class MicropostsController < ApplicationController
   def destroy
     @micropost.destroy
     respond_to do |format|
-      format.html { redirect_to microposts_url, notice: 'Micropost was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html { redirect_to show_url, notice: 'Micropost was successfully destroyed.' }
     end
   end
 
