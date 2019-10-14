@@ -6,7 +6,6 @@
   </aside>
   <div class="col-md-8">
     <% if current_user.microposts.any? %>
-      <h3>Comments</h3>
       <ol class="microposts">
         <%= render @microposts %>
       </ol>

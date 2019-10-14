@@ -9,6 +9,12 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     omniauth_callbacks: 'users/omniauth_callbacks'
   }
+
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   
   devise_scope :user do
     get "show", :to => "users/registrations#show"
