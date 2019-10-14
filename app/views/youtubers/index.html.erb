@@ -1,11 +1,10 @@
-
 <% @youtubers.each do |youtuber| %>
-   <div>
-        <a href=<%="youtubers/#{youtuber.id}"%>>
-           <%= youtuber.title %>
+    <div class="col-lg-4 col-sm-6">
+        <a href=<%="youtubers/#{youtuber.id}"%> class="portfolio-box">
+            <%= image_tag(youtuber.thumbnail_url, class: "img-responsive", alt: "") %>
+            <%= youtuber.title %>
         </a>
     </div>
 <% end %>
-
 
 <%= paginate @youtubers %>
