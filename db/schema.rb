@@ -64,7 +64,9 @@ ActiveRecord::Schema.define(version: 20191014165421) do
   end
 
   create_table "youtubers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "name"
+    t.string "title"
+    t.text "description"
+    t.string "thumbnail_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
