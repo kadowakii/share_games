@@ -3,5 +3,4 @@
 <section class="stats">
   <%= render 'shared/stats' %>
 </section>
-<span><%= link_to "view my profile", show_path %></span>
-<span><%= pluralize(current_user.microposts.count, "micropost") %></span>
+<span><%= pluralize(current_user.microposts.count, "tweets") %></span>
