@@ -8,4 +8,11 @@ class YoutubersController < ApplicationController
     @micropost = Micropost.new(youtuber_id: params[:id])
     @microposts = Micropost.where(youtuber_id: params[:id])
   end
+
+  def search
+    @youtubers = Youtuber.search(params[:search]).page(params[:page])
+  end
+
+
+
 end

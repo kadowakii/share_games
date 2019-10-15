@@ -1,4 +1,11 @@
 <%= render 'creatives/navbar_sub' %>
+    
+<nav class="navbar navbar-light bg-light">
+<%= form_tag youtubers_search_path, method: :get do %>
+    <%= text_field_tag :search, params[:search], placeholder: 'Search', class: "form-control mr-sm-2" %>
+    <%= submit_tag 'Search', class: "btn btn-primary" %>
+<% end %>
+</nav>
 
 <% @youtubers.each do |youtuber| %>
     <div class="col-lg-4 col-sm-6">

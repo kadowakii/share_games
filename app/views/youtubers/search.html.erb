@@ -1,0 +1,12 @@
+<%= render 'creatives/navbar_sub' %>
+
+<% @youtubers.each do |youtuber| %>
+    <div class="col-lg-4 col-sm-6">
+        <a href=<%="#{youtuber.id}"%> class="portfolio-box">
+            <%= image_tag(youtuber.thumbnail_url, class: "img-responsive", alt: "") %>
+            <%= youtuber.title %>
+        </a>
+    </div>
+<% end %>
+
+<%= paginate @youtubers %>
