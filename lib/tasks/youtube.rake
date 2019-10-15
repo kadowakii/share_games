@@ -36,16 +36,13 @@ namespace :youtube do
     ]
     channels.each do |channel_id|
       snippet = youtube.list_channels("snippet", id: channel_id).items.first.snippet
+      channel_id = youtube.list_channels("snippet", id: channel_id).items.first.id
       Youtuber.create!(
       title: snippet.title,
+      channel_id: channel_id,
       # description: snippet.description,
       thumbnail_url: snippet.thumbnails.high.url
       )
     end
-  end
-
-  desc "実験"
-  task :list, ['id'] do |task, args|
-    p youtube.list_channels("snippet", id: args[:id])
   end
 end

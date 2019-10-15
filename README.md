@@ -1,10 +1,10 @@
 # README
 
 * YOUTUBER REVIEWS
-    - https://share-games.herokuapp.com
+    - https://youtuber-reviews.herokuapp.com
 
 * アプリケーションの概要
-    - 遊んだゲームを記録し、ゲーマー同士で交流するサイト
+    - YouTuberをレビューするサイト
 
 * アプリケーションの機能一覧
 
