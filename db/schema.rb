@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20191014165421) do
   create_table "microposts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text "content"
     t.integer "user_id"
+    t.integer "youtuber_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

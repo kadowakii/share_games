@@ -4,7 +4,8 @@ class YoutubersController < ApplicationController
   end
 
   def show
-    @micropost = current_user.microposts.build if user_signed_in?	
     @youtuber = Youtuber.find_by(id: params[:id])
+    @micropost = Micropost.new(youtuber_id: params[:id])
+    @microposts = Micropost.where(youtuber_id: params[:id])
   end
 end

@@ -27,7 +27,7 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(micropost_params)
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to show_url, notice: 'Tweet successfully created.' }
+        format.html { redirect_to "/youtubers/#{@micropost.youtuber_id}" , notice: 'Tweet successfully created.' }
       else
         format.html { render :new }
       end
@@ -63,6 +63,6 @@ class MicropostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def micropost_params
-      params.require(:micropost).permit(:content)
+      params.require(:micropost).permit(:content, :youtuber_id)
     end
 end

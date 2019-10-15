@@ -1,5 +1,13 @@
 <%= render 'creatives/navbar_sub' %>
 <%= image_tag(@youtuber.thumbnail_url, :size => '500x500', class: "img-responsive", alt: "") %>
+<% @microposts.each do |micropost| %>
+    <div>
+      <%= micropost.content %>
+    </div>
+    <div>
+      <%= micropost.user_id %>
+    </div>
+<% end %>
 <% if user_signed_in? %>
     <%= render 'shared/micropost_form' %>
 <% end %>
