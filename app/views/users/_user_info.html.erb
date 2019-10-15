@@ -1,6 +1,4 @@
 <%= link_to gravatar_for(current_user), show_path %>
 <h1><%= current_user.name %></h1>
-<section class="stats">
-  <%= render 'shared/stats' %>
-</section>
+
 <span><%= pluralize(current_user.microposts.count, "tweets") %></span>

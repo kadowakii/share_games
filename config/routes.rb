@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   end
 
   resources :microposts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
   get "youtubers", :to => "youtubers#index" 
   get "youtubers/:id", :to => "youtubers#show"
 end
