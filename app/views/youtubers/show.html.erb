@@ -7,6 +7,9 @@
       <%= gravatar_for(micropost.user) %>
       <div class="media-body">
           <%= micropost.content %>
+          <div>
+            <%= time_ago_in_words(micropost.created_at) %>前
+          </div>
           <h5 class="mt-0 mb-1"><%= micropost.user.name %></h5>
       </div>
       </li>
@@ -16,3 +19,5 @@
 <% if user_signed_in? %>
     <%= render 'shared/micropost_form' %>
 <% end %>
+
+
