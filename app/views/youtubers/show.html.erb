@@ -1,6 +1,7 @@
 <%= render 'creatives/navbar_sub' %>
 
 <%= image_tag(@youtuber.thumbnail_url, :size => '500x500', class: "img-responsive", alt: "") %>
+<a href=<%="https://www.youtube.com/channel/#{@youtuber.channel_id}"%>> <%= @youtuber.title %> </a>
 <% @microposts.each do |micropost| %>
   <ul class="list-unstyled">
       <li class="media">
