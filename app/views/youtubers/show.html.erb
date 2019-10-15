@@ -2,13 +2,17 @@
 
 <%= image_tag(@youtuber.thumbnail_url, :size => '500x500', class: "img-responsive", alt: "") %>
 <% @microposts.each do |micropost| %>
-    <div>
-      <%= micropost.content %>
-    </div>
-    <div>
-      <%= micropost.user.name %>
-    </div>
+  <ul class="list-unstyled">
+      <li class="media">
+      <%= gravatar_for(micropost.user) %>
+      <div class="media-body">
+          <%= micropost.content %>
+          <h5 class="mt-0 mb-1"><%= micropost.user.name %></h5>
+      </div>
+      </li>
+  </ul>
 <% end %>
+<%= paginate @microposts %>
 <% if user_signed_in? %>
     <%= render 'shared/micropost_form' %>
 <% end %>

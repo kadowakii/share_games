@@ -6,7 +6,7 @@ class YoutubersController < ApplicationController
   def show
     @youtuber = Youtuber.find_by(id: params[:id])
     @micropost = Micropost.new(youtuber_id: params[:id])
-    @microposts = Micropost.where(youtuber_id: params[:id])
+    @microposts = Micropost.where(youtuber_id: params[:id]).page(params[:page])
   end
 
   def search
